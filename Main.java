@@ -85,6 +85,7 @@ public class Main {
     }
     
   }
+    //funcao que registra os clientes    
      public static void cadastro(String cliente[][], int cont[]){
       Scanner ler = new Scanner(System.in);
       int num;
@@ -102,6 +103,7 @@ public class Main {
       }
        
     }
+    //funcao que busca os clientes
     public static void busca(String cliente[][], int cont[]){
       Scanner ler = new Scanner(System.in);
       String nome;
@@ -137,6 +139,7 @@ public class Main {
       }
       System.out.println("Cliente não encontrado!!");
     }
+    //funcao que registra os produtos
     public static void cadastro_produto(String produto[][], double quantidade_produto[][], int cont_prod[]){
       Scanner ler = new Scanner(System.in);
       int num;
@@ -161,6 +164,7 @@ public class Main {
         cont_prod[0]++;
       }
     }
+    //funcao que busca os produtos
     public static void busca_produto(String produto[][], double quantidade_produto[][], int cont_prod[]){
         char mudanca;
         Scanner ler = new Scanner(System.in);
@@ -204,6 +208,7 @@ public class Main {
         }
       System.out.println("produto não encontrado!");
     }  
+    //funcao que printa o estoque
     public static void estoque(String produto[][], double quantidade_produto[][], int cont_prod[]){
       Scanner ler = new Scanner(System.in);
       for(int i = 0; i <cont_prod[0] ; i++){
@@ -219,6 +224,7 @@ public class Main {
        return;  
 
     } 
+    //funcao que registra a venda
     public static void venda(String cliente[][], double quantidade_produto[][], int cont[], int cont_prod[], String produto[][]){
       String nome;
       String produto_venda;
